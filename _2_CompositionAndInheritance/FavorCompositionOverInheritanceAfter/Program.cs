@@ -1,5 +1,20 @@
 ﻿namespace FavorCompositionOverInheritanceAfter
 {
+	/*
+	 *  Composition Solution:
+
+Instead of creating subclasses for every possible pizza type, we use composition. We can model each topping as a separate component (using interfaces or base classes) and add them to a `Pizza` class dynamically at runtime. This way, we can create any pizza by combining different toppings, without changing the structure of the `Pizza` class itself.
+
+Benefits:
+
+1. Extensibility: New toppings can be added without modifying the core pizza class.
+    
+2. Customization: Users can freely combine different toppings to create their pizzas.
+    
+3. Maintainability: No need to update the code for all pizza types whenever a new topping is added.
+    
+4. Simpler Codebase: The logic for handling different pizza types doesn't require maintaining a large inheritance tree.
+	 */
 	internal class Program
 	{
 		static void Main(string[] args)

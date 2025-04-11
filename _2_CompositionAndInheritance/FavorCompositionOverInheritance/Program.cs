@@ -3,7 +3,13 @@
 	/*
 		use inheritance if relation is pure is-a
 		this app is good for now but if you want  
-		pizza  cheese and chicken is defcult 
+		pizza  cheese and chicken is defcult
+
+	Inheritance Issue:
+
+- Suppose we start with a `Pizza` class, and for every new topping (e.g., Cheese, Chicken, Veggies), we create a subclass like `CheesePizza`, `ChickenPizza`, `VeggiePizza`, etc.
+    
+- As we add more toppings, the number of classes increases exponentially, leading to a **combinatorial explosion of subclasses**.
 	 */
 	internal class Program
 	{
